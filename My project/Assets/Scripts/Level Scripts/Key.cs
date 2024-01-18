@@ -36,6 +36,7 @@ public class Key : MonoBehaviour
 
         // Fade out effect
         float duration = keySound.clip.length;
+        //float duration = 0.5f;
         float currentTime = 0f;
 
         while (currentTime < duration)

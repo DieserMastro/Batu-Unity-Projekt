@@ -184,11 +184,15 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("EndLevel"))
+        if (collision.collider.CompareTag("EndLevel1"))
         {
             Debug.Log("end oflevel");
             GM.Level2();
         }
+       /* else if (collision.collider.CompareTag("Test"))
+        {
+            Debug.Log("Test collided");
+        }*/
         else if (collision.collider.CompareTag("Danger")) // Ersetze "Enemy" durch den tatsächlichen Tag deiner Gegner
         {
             // Spiele den Todes-Sound ab, falls vorhanden
